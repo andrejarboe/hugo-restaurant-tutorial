@@ -13,3 +13,6 @@ collections:
     fields:
       - {label: "Name of Item", name: "title", widget: "string"}
       - {label: "Suppported Meals", name: "categories", widget: "list", default: ["lunch", "dinner"]}
+      - {label: "Ingredients/Description", name: "description", widget: "text"}
+      - {label: "Type of Food", name: "type", widget: "string", default: "raw bar"}
+      - {lable: "Price", name: "price", widget: "string"}
