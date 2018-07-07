@@ -1,0 +1,15 @@
+backend:
+  name: github
+  repo: andrejarboe/hugo-restaurant-tutorial
+  branch: master # Branch to update (optional; defaults to master)
+
+media_folder: "src/img/gallery" # Folder where user uploaded files should go
+
+collections:
+  - name: food
+    label: "Food Item"
+    folder: "site/content/food"
+    create: true
+    fields:
+      - {label: "Name of Item", name: "title", widget: "string"}
+      - {label: "Suppported Meals", name: "categories", widget: "list", default: ["lunch", "dinner"]}
